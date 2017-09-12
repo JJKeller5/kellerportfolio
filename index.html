@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="css/unslider.css"> 
+<link rel="stylesheet" href="css/unslider-dots.css"> 
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato:300,300i,400,400i,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+</head>
+<body>
+    <header> 
+        <div class="center-block"> 
+            <div class="header-top clearfix"> 
+                <p class="logo">Портфолио</p> 
+            </div>
+            <div class="header-bottom clearfix"> 
+                <h1>Верстка веб-сайтов</h1>
+            </div>
+        </div>
+    </header>
+    <div class="description center-block clearfix">
+       <p>HTML5 - CSS3 - Bootstrap - Pug - Sass</p>
+        <div class="description-btn">
+            <p>
+                <a href="#contacts" class="dbtn">Заказать сайт</a>
+            </p>
+        </div>
+    </div>
+    <section class="block3-section center-block">
+       <h2>Мои работы</h2>
+        <div class="block3-top clearfix">
+           <article class="rimg">
+                <a href="Site2/index.html"><img src="images/site2.png" alt="site1"></a>
+            </article>
+            <article class="ltext">
+                <h3><a href="Site2/index.html">Landing Page</a></h3>
+                <p>Адаптивная верстка лендинга на Bootstrap.</p>
+            </article>
+        </div>  
+        <div class="block3-top clearfix third-item">
+           <article class="rimg">
+                <a href="Site1/index.html"><img src="images/site1.png" alt="site2"></a>
+            </article>
+            <article class="ltext">
+                <h3><a href="Site1/index.html">Landing Page 2</a></h3>
+                <p>Адаптивная Bootstrap верстка лендинга по PSD макету.</p>
+            </article>
+        </div> 
+        <div class="block3-top clearfix third-item">
+           <article class="rimg">
+                <a href="Site3/index.html"><img src="images/site3.png" alt="site3"></a>
+            </article>
+            <article class="ltext">
+                <h3><a href="Site3/index.html">Creative Studio</a></h3>
+                <p>Статическая верстка сайта дизайн-студии на HTML5 и CSS3.</p>
+            </article>
+        </div>  
+    </section>
+    <!-- <div class="my-slider center-block">  
+        <ul>
+            <li> 
+               <div class="slide-text">
+                   <h2>Отзывы и рекомендации</h2>
+                   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+               </div>
+            </li>
+            <li>
+                <div class="slide-text">
+                   <h2>Отзывы и рекомендации</h2>
+                   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+               </div>
+            </li>
+            <li>
+                <div class="slide-text">
+                   <h2>Отзывы и рекомендации</h2>
+                   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+               </div>
+            </li>
+        </ul>
+    </div> -->
+    <footer class="ftr" id="contacts">
+        <div class="center-block clearfix">
+           <div class="ftr-text">
+               <h3>Заказать верстку сайта:</h3>
+               <h3><a href="mailto:hunterairman@yahoo.com">hunterairman@yahoo.com</a> или <a href="https://vk.com/id151376372">VK</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    <script src="js/unslider-min.js"></script> 
+    <script> 
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+                autoplay: false, 
+                arrows: true 
+            });
+		});
+	</script>
+</body>
+</html>

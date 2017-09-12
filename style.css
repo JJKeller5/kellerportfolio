@@ -1,0 +1,285 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #fff;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: Arial, sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #fff;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fff;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue.eot');
+    src: url('fonts/HelveticaNeue.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeue.woff2') format('woff2'),
+         url('fonts/HelveticaNeue.woff') format('woff'),
+         url('fonts/HelveticaNeue.ttf') format('truetype'),
+         url('fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueThin';
+    src: url('fonts/HelveticaNeueThin.eot');
+    src: url('fonts/HelveticaNeueThin.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueThin.woff2') format('woff2'),
+         url('fonts/HelveticaNeueThin.woff') format('woff'),
+         url('fonts/HelveticaNeueThin.ttf') format('truetype'),
+         url('fonts/HelveticaNeueThin.svg#HelveticaNeueThin') format('svg');
+}
+
+/* --------------- /базовые настройки ---------*/
+.center-block { 
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header {
+    background: url(images/opensource-background1.jpg);
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-top { 
+    padding: 50px 0 70px 0;
+}
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.header-bottom h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+}
+.description {
+    padding: 60px 0 90px 0;
+}
+.description>p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #999;
+    font-family: Arial, sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.description-btn {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.dbtn {
+    background: #1976D3;
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+.dbtn:hover {
+    color: #1976D3;
+    background: #fff;
+    border: 1px solid #1976D3;
+}
+.block3-section {
+    margin-bottom: 60px;
+    padding: 30px 0;
+    color: #999;
+    font-family: Arial, sans-serif;
+}
+.block3-section h2 {
+    margin-bottom: 90px;
+    color: #999;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    text-align: center;
+}
+.block3-section h3 a {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 15px;
+}
+.block3-section article p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #D3D3D3;
+}
+.block3-top {
+    margin-bottom: 30px;
+}
+.ltext {
+    width: 60%;
+}
+.rimg {
+    float: right;
+}
+.rtext {
+    width: 60%;
+    float: right;
+}
+.limg {
+    float: left;
+}
+.my-slider { 
+    height: 310px;
+    padding: 85px 0 0 0;
+}
+.my-slider ul li h2 { 
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #999;
+    text-align: center;
+}
+.my-slider ul li p { 
+    font-size: 16px;
+    color: #999;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+.unslider-nav { 
+    margin: 0 auto;
+    position: relative;
+    top: -180px;
+}
+.ftr {
+    background: url(images/opensource-background1.jpg);
+    padding: 40px 20px;
+    color: #fff;
+    height: 300px;
+}
+.ftr-text {
+    text-align: center;
+    margin-top: 90px;
+}
+.ftr-text h3 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+.ftr-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+.ftr-text p {
+    margin-bottom: 10px;
+    font-size: 0.875em;
+}
+.ftr-btn {
+     float: right;
+}
+.third-item {
+    margin-top: 30px;
+}
+.block3-section a img:hover {
+    border: 2px solid #999;
+    margin-bottom: -4px;
+}
+@media screen and (max-width:371px) {
+    .rimg {
+        float: none;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .ltext {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .block3-section h2 {
+        margin-bottom: 30px;
+    }
+    .block3-section {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:350px) {
+    .ftr-text a:first-child {
+        margin-left: -15px;
+        font-size: 80%;
+    }
+}
